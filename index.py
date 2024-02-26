@@ -115,7 +115,7 @@ class Register:
 
     # TODO: Reulst of the quiz is display here
 
-    def getQuizResults(self, username, password):
+    def getQuizResults(self, username):
         cursor = self.con.cursor()
         cursor.execute(
             "SELECT * FROM register WHERE username = '{}'".format(username))
@@ -163,8 +163,7 @@ if __name__ == '__main__':
                 register.attempt_quiz(userName, password)
             elif choice == 6:
                 userName = input('Enter your username: ')
-                password = input('Enter your password: ')
-                register.getQuizResults(userName, password)
+                register.getQuizResults(userName)
             elif choice == 7:
                 print("Thank you for registering")
                 break
