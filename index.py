@@ -78,16 +78,20 @@ class Register:
         else:
             quiz = [
                 {
-                    "question": "What is the capital of France?",
-                    "answer": "Paris"
+                    "question": "Who developed Python Programming Language?",
+                    "answer": "Guido van Rossum"
                 },
                 {
-                    "question": "What is the largest planet in our solar system?",
-                    "answer": "Jupiter"
+                    "question": "Is Python case sensitive when dealing with identifiers?",
+                    "answer": "Yes"
                 },
                 {
-                    "question": "Who wrote 'Romeo and Juliet'?",
-                    "answer": "William Shakespeare"
+                    "question": "Which keyword is used for function in Python language?",
+                    "answer": "def"
+                },
+                {
+                    "question": "What is output of print(math.pow(3, 2))?",
+                    "answer": "9.0"
                 }
             ]
 
