@@ -128,7 +128,7 @@ if __name__ == '__main__':
                 4.Show Profile
                 5.Attemp Quiz
                 6.Quiz Results
-                7.Exit
+                7.Log Out
             ''')
             choice = int(input('Enter your choice: '))
             if choice == 1:
