@@ -1,5 +1,6 @@
 import mysql.connector as mysql
 
+
 class Register:
     def __init__(self):
         self.con = mysql.connect(host='localhost', username='root',
@@ -7,21 +8,7 @@ class Register:
         if self.con.is_connected() == True:
             print("Connected to database")
 
-    # TODO: unique username functionality for keep track of user and decrease the data duplicaticy.
-    # FIXME: this fuciton check that username is unique or not if it's not unique it give a warning that user is already exists or if username is not unique it gives a success message and the process will continue.
-
-    def unique_username(self, username):
-        cursor = self.con.cursor()
-        query = "SELECT * FROM register WHERE username = %s"
-        cursor.execute(query, ([username]))
-        result = cursor.fetchall()
-        if len(result) == 0:
-            print("UserName is already registered")
-            return True
-        else:
-            return False
-
-    # TODO: Register functions start from here
+    # TODO: Register and unique username functions start from here
     # FIXME: new user can register for attempt quiz
 
     def register(self, userName, password, name, phoneNumber):
