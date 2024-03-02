@@ -1,4 +1,4 @@
-"""
+
 This Python script provides a simple quiz application with functionalities for user registration, login, password management, profile viewing, quiz attempts, and viewing quiz results. It interacts with a MySQL database to store and manage user data and quiz results.
 
 Classes:
@@ -24,4 +24,4 @@ Note:
     - The script includes placeholders for additional functionalities and fixes, indicated by TODO and FIXME comments.
     - Exception handling is implemented for database operations to manage errors gracefully.
     - The script is designed to run indefinitely until the user chooses to log out or terminates the program manually (e.g., through a KeyboardInterrupt).
-"""
+
